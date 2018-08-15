@@ -20,6 +20,7 @@ public class LoginServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String userName = request.getParameter("userName");
 		String pswd = request.getParameter("pswd");
+		System.out.println(userName + " " + pswd);
 		if(userName.equals("linfeng") && pswd.equals("19931027")){
 			request.setAttribute("userName", userName);
 			request.getRequestDispatcher("jsp/main.jsp").forward(request, response);
