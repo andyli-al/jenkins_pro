@@ -21,7 +21,7 @@ public class LoginServlet extends HttpServlet {
 		String userName = request.getParameter("userName");
 		String pswd = request.getParameter("pswd");
 		System.out.println(userName + " " + pswd);
-		if(userName.equals("xql") && pswd.equals("19930307")){
+		if(userName.equals("llf1993") && pswd.equals("xql1993")){
 			request.setAttribute("userName", userName);
 			request.getRequestDispatcher("jsp/main.jsp").forward(request, response);
 		}else{
