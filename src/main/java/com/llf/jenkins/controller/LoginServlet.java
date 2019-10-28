@@ -23,6 +23,7 @@ public class LoginServlet extends HttpServlet {
 		System.out.println(userName + " " + pswd);
 		if(userName.equals("19931027") && pswd.equals("19930307")){
 			request.setAttribute("userName", userName);
+                                                 //×ª·¢
 			request.getRequestDispatcher("jsp/main.jsp").forward(request, response);
 		}else{
 			response.sendRedirect("jsp/login.jsp");
